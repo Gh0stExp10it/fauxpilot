@@ -10,7 +10,7 @@ services:
       - ${MODEL_DIR}:/model
       - ${HF_CACHE_DIR}:/root/.cache/huggingface
     ports:
-      - "8000:8000"
+      - "8010:8010"
       - "${TRITON_PORT}:8001"
       - "8002:8002"
     deploy:
